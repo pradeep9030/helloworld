@@ -5,10 +5,10 @@ pipeline {
 	     stage ('compile stage'){
 		 
 		    steps {
-		        withMaven : ('maven 3.5.4') {
+		      
 			      sh 'mvn clean compile '
 				
-				}
+				
 						
 			}
 			
@@ -20,10 +20,10 @@ pipeline {
            stage ('Testing  stage'){
 		 
 		    steps {
-		        withMaven :( 'maven 3.5.4') {
+		       
 			      sh 'mvn test '
 				
-				}
+				
 						
 			}
 			
